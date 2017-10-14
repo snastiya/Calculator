@@ -13,9 +13,25 @@ public class Calculator {
         float first = scanner.nextFloat();
         System.out.println("Введите второе число: ");
         float second = scanner.nextFloat();
-        float sum;
-        sum = first + second;
-        System.out.printf("%.4f", sum);
+        System.out.println("Введите действие: ");
+        String operator = scanner.next();
+
+       // float result;
+
+        if (operator.equals("*")){
+            System.out.printf("%.4f",(first * second));
+        }
+        if (operator.equals("/")){
+            System.out.printf("%.4f",(first / second));
+        }
+        if (operator.equals("+")){
+            System.out.printf("%.4f",(first + second));
+        }
+        if (operator.equals("-")){
+            System.out.printf("%.4f",(first - second));
+        }
+
+        //System.out.printf("%.4f", result);
     }
 
 }
